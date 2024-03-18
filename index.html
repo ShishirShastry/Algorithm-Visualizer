@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathfinding Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="board"></div>
+  <div id="controls">
+    <div class="center-center">
+  <a class="btn-glitch-fill">
+    <span class="text">Algo Visualizer</span><span class="text-decoration">_</span><span class="decoration">&rArr;</span>
+    <button onclick="runBFS()">BFS</button>
+    <button onclick="runDFS()">DFS</button>
+    <button onclick="resetBoard()">Reset</button>
+    <button onclick="visualize()">Visualize</button>
+  </div>
+</a>
+</div>
+<div class="info">
+  <section>
+      <div style="height:20px; width:20px; background:green;"></div><p>Start Node</p>
+  </section>
+ <section>
+      <div style="height:20px; width:20px; background:red;"></div><p>End Node</p>
+  </section>
+
+</div>
+
+  <div id="results">
+    <p id="resultText"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
